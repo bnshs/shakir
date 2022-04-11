@@ -601,7 +601,7 @@ body {
     color: #FFFFFF;
     position: relative;
 
-    &::after{
+    &::after {
         content: '';
         position: absolute;
         background-image: url(../img/stats-bg-icon.svg);
@@ -610,7 +610,7 @@ body {
         right: 0;
         top: 20px;
     }
-    
+
 
     &__inner {
         display: flex;
@@ -661,5 +661,95 @@ body {
         line-height: 31px;
         letter-spacing: -0.02em;
         margin-left: 16px;
+    }
+}
+
+.blog {
+    background-color: #FAFBFF;
+    padding: 150px 0;
+
+    &__title {
+        margin-bottom: 72px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        margin-bottom: 29px;
+
+        &-read {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            color: #1B1C31;
+            position: relative;
+            padding-right: 15px;
+        }
+
+        &-read::after{
+            content: '';
+            display: block;
+            width: 12px;
+            height: 9px;
+            background-image: url(../img/blog-arrow.svg);
+            float: right;
+            position: absolute;
+            top: 13px;
+            transform: translate(50%, -50%);
+            right: 0;
+        }
+    }
+
+    &__wrap {
+        padding: 34px 28px;
+    }
+
+    &__practices {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 36px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+
+        &-box {
+            max-width: 524px;
+            margin-bottom: 68px;
+        }
+
+        &-item{
+            margin-top: 6px;
+        }
+    }
+
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__item{
+        background-color: #fff;
+        max-width: 382px;
+        height: 436px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-wrap{
+            padding: 25px 32px;
+        }
+
+        &-img{
+            max-width: 382px;
+            width: 100%;
+        }
     }
 }
