@@ -144,6 +144,15 @@ body {
   background-color: #3734A9;
   border-radius: 47px;
   margin-right: 50px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.header__main-btn:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .header__main-box {
@@ -153,6 +162,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.header__main-box:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .header__main-text {
@@ -839,4 +857,325 @@ body {
 .blog__item-img {
   max-width: 382px;
   width: 100%;
+}
+
+.questions {
+  background-color: #FAFBFF;
+  position: relative;
+  padding-bottom: 150px;
+}
+
+.questions::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/questions-icon-bg.svg);
+  width: 30px;
+  height: 65px;
+  top: 90px;
+  left: 0;
+}
+
+.questions::after {
+  position: absolute;
+  content: '';
+  background-image: url(../img/questions-icon-bg-2.svg);
+  width: 99px;
+  height: 152px;
+  top: 0px;
+  right: 0;
+}
+
+.questions__title {
+  margin-bottom: 71px;
+  line-height: 76px;
+}
+
+.questions__title-small {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.questions__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questions__item {
+  padding: 25px 23px;
+  background-color: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  border-radius: 10px;
+  width: 751px;
+  margin-bottom: 15px;
+}
+
+.questions__item:last-child {
+  margin-bottom: 0;
+}
+
+.questions__item-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.questions__item-text {
+  font-size: 16px;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+  margin-top: 23px;
+}
+
+.questions__connection {
+  background-color: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  border-radius: 10px;
+  max-width: 401px;
+  padding: 67px 32px 32px 32px;
+  text-align: center;
+}
+
+.questions__connection-img {
+  margin-bottom: 43px;
+}
+
+.questions__connection-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-top: 23px;
+  margin-bottom: 115px;
+}
+
+.questions__connection-box {
+  margin: 0 auto;
+}
+
+.questions__connection-btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  background-color: #FF7F5C;
+  padding: 23px 99px;
+  display: block;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.questions__connection-btn:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.discover {
+  background-color: #FAFBFF;
+}
+
+.discover__inner {
+  text-align: center;
+  border-radius: 20px;
+  background-image: url(../img/discover-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: center center;
+  padding: 100px 0 118px;
+  border-radius: 20px;
+}
+
+.discover__title {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 61px;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  max-width: 763px;
+}
+
+.discover__btn {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  background-color: #FF7F5C;
+  border-radius: 10px;
+  padding: 19px 42px;
+  display: block;
+  max-width: 223px;
+  margin: 0 auto;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.discover__btn:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer {
+  background-color: #FAFBFF;
+}
+
+.footer__inner {
+  padding: 150px 0 60px;
+  border-bottom: 2px solid #E5E5EA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__connect-text {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #757095;
+  margin: 18px 0 31px;
+  max-width: 213px;
+}
+
+.footer__connect-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__connect-item {
+  margin-right: 16px;
+}
+
+.footer__connect-item:last-child {
+  margin-right: 0;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  color: #181433;
+}
+
+.footer__company-items {
+  margin-top: 24px;
+}
+
+.footer__company-item {
+  margin-bottom: 18px;
+}
+
+.footer__company-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__company-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #181433;
+}
+
+.footer__res-items {
+  margin-top: 24px;
+}
+
+.footer__res-item {
+  margin-bottom: 12px;
+}
+
+.footer__res-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__res-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #181433;
+}
+
+.footer__form {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  margin-bottom: 21px;
+}
+
+.footer__input {
+  max-width: 389px;
+  width: 100%;
+  background-color: #EEEEFF;
+  padding: 15px 11px 15px 15px;
+}
+
+.footer__input::-webkit-input-placeholder {
+  color: #181433;
+  opacity: 0.2;
+}
+
+.footer__input:-ms-input-placeholder {
+  color: #181433;
+  opacity: 0.2;
+}
+
+.footer__input::-ms-input-placeholder {
+  color: #181433;
+  opacity: 0.2;
+}
+
+.footer__input::placeholder {
+  color: #181433;
+  opacity: 0.2;
+}
+
+.footer__btn {
+  color: #fff;
+  background-color: #3734A9;
+  padding: 13px 32px;
+}
+
+.footer__news-text {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  color: #181433;
+  opacity: 0.5;
+  max-width: 329px;
+}
+
+.footer__bottom {
+  padding: 40px 0 60px;
+}
+
+.footer__bottom-text {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #181433;
 }
