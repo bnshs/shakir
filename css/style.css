@@ -10,6 +10,26 @@ body {
   padding: 0 15px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background-color: rgba(30, 27, 27, 0.325);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.overlay--show {
+  visibility: visible;
+  opacity: 1;
+}
+
 .title {
   font-weight: 800;
   font-size: 71px;
@@ -267,13 +287,6 @@ body {
   z-index: 2;
 }
 
-.menu__list-item:hover .submenu {
-  display: block;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
 .menu__list-item:last-child {
   margin-right: 0;
 }
@@ -292,30 +305,14 @@ body {
   border: 1px solid #4f46ba;
   border-top: none;
   border-right: none;
-  z-index: 0;
-  display: none;
-  opacity: 0;
+  z-index: 2;
   -webkit-transition: all .6s;
   -o-transition: all .6s;
   transition: all .6s;
 }
 
-.submenu:hover {
-  display: block;
-  opacity: 1;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
 .submenu__item {
   padding: 25px 20px 13px 20px;
-}
-
-.submenu__item:hover {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
 }
 
 .portfolio {
@@ -1509,9 +1506,13 @@ body {
 }
 
 @media (max-width: 750px) {
+  .header {
+    overflow: visible;
+  }
   .header__top {
     position: absolute;
     left: 0;
+    z-index: 50;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1557,17 +1558,24 @@ body {
   .menu__list-item {
     margin: 0;
     padding: 15px;
-    position: relative;
     z-index: 0;
   }
+  .menu__list-link {
+    display: block;
+    text-align: center;
+  }
   .submenu {
-    top: 35px;
-    right: -29px;
-    opacity: 1;
+    position: static;
     padding: 0 25px;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
   }
   .submenu__item {
-    width: 112px;
+    width: 120px;
   }
   .header__usernav {
     display: -webkit-box;
@@ -1593,7 +1601,7 @@ body {
     position: absolute;
     top: 20px;
     right: 30px;
-    z-index: 5;
+    z-index: 55;
   }
   .header__burger span {
     display: block;
